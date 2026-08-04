@@ -1,0 +1,33 @@
+
+### [PHRASE success] type=phrase  METEOR=0.996
+post : You won't believe what Samir Nasri has done to support Man City ahead of the League Cup final
+gold : dying his hair sky blue
+pred : dying his hair sky blue
+
+### [PHRASE failure] type=phrase  METEOR=0.000
+post : Here’s how much you should be tipping your hairdresser
+gold : 20%
+pred : between $5 and $20
+
+### [PASSAGE truncation (why full-para helps)] type=passage  METEOR=0.000
+post : Lawmakers could do this to fight corruption. But they won’t.
+gold : In February, when Rep. David Jolly introduced his quixotic plan to ban members of Congress from soliciting campaign contributions, the Florida Republican had only six co-sponsors.
+pred : congressional reform
+
+### [PASSAGE selection failure] type=passage  METEOR=0.000
+post : Five Nights at Freddy’s Sequel Delayed for Weird Reason
+gold : some of the plot elements are so disturbing that they are making him feel sick
+pred : too dark
+
+### [PASSAGE success] type=passage  METEOR=1.000
+post : Do you need a gym nanny to make you exercise (and we don't mean a trainer)?:
+gold : Martin says this is perfect for modeling agencies, high-profile clients who don't want to give away personal information as they book appointments, or people who find excuses not to do things they don
+pred : Martin says this is perfect for modeling agencies, high-profile clients who don't want to give away personal information as they book appointments, or people who find excuses not to do things they don
+
+### [MULTI (example)] type=multi  METEOR=0.844
+post : "Harry Potter" alums reunite for new movie
+gold : Alan Rickman & Rupert Grint CBGB
+pred : Alan Rickman & Rupert Grint
+
+(Note: predictions shown are single-span QA outputs saved during fine-tuning;
+ the passage truncation cases are exactly what motivated the full-paragraph fix.)
